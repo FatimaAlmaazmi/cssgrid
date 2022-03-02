@@ -1,0 +1,59 @@
+html{
+  font-size: 16px;
+}
+
+body{
+  margin:0;
+  padding: 0;
+}
+
+.myGrid{
+  background-color: aqua;
+  padding: 20px;
+  max-width: 900px;
+  min-height: 500px;
+  margin: 20px auto 20px auto;
+  display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 10%;
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+}
+
+.myGrid div{
+  background-color: aliceblue;
+min-width: 150px;
+}
+
+
+.myGrid3 {
+background-color: burlywood;
+padding: 20px;
+margin-top: 30px;
+min-height: 500px;
+width: calc(100% - 40px);
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 20px
+
+}
+
+.myGrid3 div{
+  background-color: lavender;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.myGrid3 div:nth-child(even){
+  grid-column: 1;
+  justify-self: end;
+}
+
+.myGrid3 div:nth-child(odd){
+  grid-column: 2;
+  justify-self: start;
+}
